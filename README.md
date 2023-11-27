@@ -8,10 +8,10 @@ Here's an example of a bash script used on the Geneva HPC servers:
 #!/bin/env bash
 
 #SBATCH --partition=shared-gpu
-#SBATCH --time=09:00:00
+#SBATCH --time=06:30:00
 #SBATCH --output=journal-%j.out
 #SBATCH --mem=25000
-#SBATCH --gres=gpu:3,VramPerGpu:24GB
+#SBATCH --gres=gpu:2,VramPerGpu:24GB
 #SBATCH --cpus-per-task=12
 module load cuDNN/8.6.0.163-CUDA-11.8.0 GCCcore/10.3.0 Python/3.9.5 OpenSSL/1.1.1q
 
